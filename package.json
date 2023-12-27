@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@redbous/hrnet-modal": "^0.1.1",
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +16,7 @@
     "react-router-dom": "^6.19.0",
     "react-scripts": "5.0.1",
     "react-select": "^5.8.0",
+    "redbous-hrnet-modal": "^0.1.5",
     "redux": "^4.2.1",
     "styled-components": "5.3.3",
     "web-vitals": "^2.1.4"

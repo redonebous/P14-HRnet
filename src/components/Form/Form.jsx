@@ -5,7 +5,8 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { states, departement } from '../../data/select';
 import { useUsersDispatch } from '../../hook/UsersContext';
-import Modal from '../Modal/Modal';
+//import Modal from '../Modal/Modal';
+import { Modal } from 'redbous-hrnet-modal';
 
 export default function Form() {
     const [selectedState, setSelectedState] = useState(null);
@@ -103,10 +104,10 @@ export default function Form() {
                 <input type="submit" value='save' className={style.submit} />
 
             </form>
-            {/* <Modal isActive={isSubmit} setIsActive={setIsSubmit} message="L'employé a bien été ajouté !" /> */}
-            <Modal isActive={isSubmit} setIsActive={setIsSubmit}>
+            <Modal isActive={isSubmit} setIsActive={setIsSubmit} message="L'employé a bien été ajouté !" />
+            {/*             <Modal isActive={isSubmit} setIsActive={setIsSubmit}>
                 {test}
-            </Modal>
+            </Modal> */}
         </>
     )
 }
