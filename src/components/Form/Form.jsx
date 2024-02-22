@@ -5,7 +5,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { states, departement } from '../../data/select';
 import { useUsersDispatch } from '../../hook/UsersContext';
-//import Modal from '../Modal/Modal';
 import { Modal } from 'redbous-hrnet-modal';
 
 export default function Form() {
@@ -16,7 +15,6 @@ export default function Form() {
     const [isSubmit, setIsSubmit] = useState(false);
     const form = useRef();
     const dispatch = useUsersDispatch();
-    const test = <span>Ceci est un test</span>;
 
     const handleForm = async (e) => {
         e.preventDefault();
@@ -24,8 +22,8 @@ export default function Form() {
         const postData = {
             firstname: form.current[0].value,
             lastname: form.current[1].value,
-            birthdate: birthDate, //birthDate?.getDate() + '/' + birthDate?.getMonth() + '/' + birthDate?.getFullYear(),
-            startdate: startDate, // startDate?.getDate() + '/' + startDate?.getMonth() + '/' + startDate?.getFullYear(),
+            birthdate: birthDate,
+            startdate: startDate,
             street: form.current[4].value,
             city: form.current[5].value,
             state: selectedState?.value,
@@ -105,9 +103,7 @@ export default function Form() {
 
             </form>
             <Modal isActive={isSubmit} setIsActive={setIsSubmit} message="L'employé a bien été ajouté !" />
-            {/*             <Modal isActive={isSubmit} setIsActive={setIsSubmit}>
-                {test}
-            </Modal> */}
+
         </>
     )
 }
