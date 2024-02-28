@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 import DataTable from 'react-data-table-component';
 import { useUsers } from '../../hook/UsersContext';
 import { FormatUserData } from '../../data/FormatUserData';

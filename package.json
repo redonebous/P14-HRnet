@@ -17,7 +17,6 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.8.0",
     "redbous-hrnet-modal": "^0.1.5",
-    "redux": "^4.2.1",
     "styled-components": "5.3.3",
     "web-vitals": "^2.1.4"
   },
@@ -29,7 +28,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",  
+      "react-app",
       "react-app/jest"
     ]
   },

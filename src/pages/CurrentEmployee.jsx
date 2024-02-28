@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Tableau from '../components/Tableau/Tableau';
-import { useUsers } from '../hook/UsersContext';
 
 
 export default function CurrentEmployee() {
